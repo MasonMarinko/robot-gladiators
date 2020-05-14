@@ -105,7 +105,7 @@ var startGame = function() {
                 shop();
             }
         } 
-        else {
+     } else {
             window.alert("You have lost your robot in battle! Game Over!");
             break;
         }
@@ -114,7 +114,6 @@ var startGame = function() {
        // play again
        endGame();
     };
-}
 
     // function to end the entire game
     var endGame = function() {
@@ -123,8 +122,9 @@ var startGame = function() {
             window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".");
         }
         else {
-        window.alert("The game has now ended. Let's see how you did!");
+        window.alert("You've lost your robot in battle.");
         }
+    
         //ask player if they'd like to play again
         var playAgainConfirm = window.confirm("Would you like to play again?");
 
@@ -136,7 +136,6 @@ var startGame = function() {
             window.alert("Thank you for playing Robot Gladiators! Come back soon!");
         }
     }
-
     var shop = function() {
         // ask player what they'd like to do
         var shopOptionPrompt = window.prompt(
@@ -187,5 +186,5 @@ var startGame = function() {
         }
     };
 
-
+// start the game when the page loads
 startGame();
