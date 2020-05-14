@@ -172,10 +172,6 @@ var startGame = function() {
         else {
             alert(playerInfo.name + " did not beat the high score of " + highScore + ". Maybe next time!");
         }
-        // if player is still alive, player wins!
-        if (playerInfo.health > 0) {
-            window.alert("Great job, you've survived the game! You now have a score of " + playerInfo.money + ".");
-        }
     
         //ask player if they'd like to play again
         var playAgainConfirm = window.confirm("Would you like to play again?");
