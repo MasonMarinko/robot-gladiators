@@ -169,7 +169,7 @@ var startGame = function() {
                 playerMoney = playerMoney - 7;
                 }
                 else {
-                    window.alert("You don't have enough money!")
+                    window.alert("You don't have enough money!");
                 }
 
                 break;
@@ -181,12 +181,11 @@ var startGame = function() {
                 break;
             default:
                 window.alert("You did not pick a valid option. Try again.");
-
                 // call shop() again to force player to pick a valid option
-                shop()
+                shop();
                 break;
         }
     };
 
 
-    startGame();
+startGame();
